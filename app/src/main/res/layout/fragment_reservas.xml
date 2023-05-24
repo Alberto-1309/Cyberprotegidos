@@ -25,22 +25,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonAñadirReserva" />
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        android:progressTint="@android:color/white"
+        android:indeterminateTint="@android:color/white" />
+
     <TextView
         android:id="@+id/reservas_error_text"
-        android:visibility="gone"
-        android:text="No se han encontrado reservas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/buttonAñadirReserva"
+        android:text="No se han encontrado reservas"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAñadirReserva" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="365dp" />
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
