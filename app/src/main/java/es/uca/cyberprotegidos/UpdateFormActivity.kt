@@ -58,7 +58,7 @@ class UpdateFormActivity : AppCompatActivity() {
         val extras = intent.extras
         val id = extras?.getString("id")
         val tipo = extras?.getString("tipo")
-        val name = extras?.getString("name")
+        val name = extras?.getString("nombre")
         val dni = extras?.getString("dni")
         val telefono = extras?.getString("telefono")
         val email = extras?.getString("email")
