@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".ui.salas.SalasFragment">
 
+    <TextView
+        android:id="@+id/tituloTutoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_Tutoria"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
     <ImageView
         android:id="@+id/imageTutoria"
         android:layout_width="match_parent"
@@ -146,6 +156,16 @@
 
     </TableLayout>
 
+    <TextView
+        android:id="@+id/tituloTaller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_Taller"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
     <ImageView
         android:id="@+id/imageTaller"
         android:layout_width="match_parent"
@@ -282,6 +302,16 @@
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/tituloCongreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_Congreso"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
 
     <ImageView
         android:id="@+id/imageCongreso"

@@ -72,4 +72,7 @@
     <string name="app_widget_description">This is an app widget description</string>
     <string name="ip_address">192.168.1.136</string>
     <string name="server_port">8080</string>
+    <string name="titulo_Tutoria">Tutoría</string>
+    <string name="titulo_Taller">Taller</string>
+    <string name="titulo_Congreso">Congreso</string>
 </resources>
