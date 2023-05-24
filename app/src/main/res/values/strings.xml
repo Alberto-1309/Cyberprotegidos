@@ -75,4 +75,5 @@
     <string name="titulo_Tutoria">Tutoría</string>
     <string name="titulo_Taller">Taller</string>
     <string name="titulo_Congreso">Congreso</string>
+    <string name="PDF">Descargar PDF</string>
 </resources>

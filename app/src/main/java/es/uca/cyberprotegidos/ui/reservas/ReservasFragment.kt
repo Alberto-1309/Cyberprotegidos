@@ -79,12 +79,6 @@ class ReservasFragment : Fragment() {
     }
 
     suspend private fun fetchBookings(context: Context): List<Reserva>{
-        /*var reservas = listOf(
-            Reserva("1312", UserModel("David","Luna"), "13:00", "14:00", "2023-04-13", "4", 	"3"),
-            Reserva("1352", UserModel("Laura","Guerrero"), "13:00", "14:00", "2023-04-13", "4", 	"3"),
-            Reserva("4432", UserModel("Alemale","Malayo"), "13:00", "14:00", "2023-04-13", "4", 	"3"),
-            Reserva("5532", UserModel("Juan","Perico"), "13:00", "14:00", "2023-04-13", "4", 	"3"),
-        )*/
         Log.d("FETCH", "Función ejecutada");
         val service = ApiService(context)
         var reservas = service.getReservas()
