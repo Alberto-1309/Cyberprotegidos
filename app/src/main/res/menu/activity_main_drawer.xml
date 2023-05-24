@@ -7,14 +7,15 @@
         <item
             android:id="@+id/nav_salas"
             android:icon="@drawable/ic_menu_salas"
-            android:title="Salas" />
+            android:title="@string/menu_salas"
+            android:checked="true" />
         <item
             android:id="@+id/nav_reservas"
             android:icon="@drawable/ic_menu_reservas"
-            android:title="Reservas" />
+            android:title="@string/menu_reservas" />
         <item
             android:id="@+id/nav_localizacion"
             android:icon="@drawable/ic_menu_localizacion"
-            android:title="Localizacion" />
+            android:title="@string/menu_localizacion" />
     </group>
 </menu>

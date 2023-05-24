@@ -31,8 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tipo de sala"
-                android:layout_below="@id/reserva_text_id"
-                />
+                android:layout_below="@id/reserva_text_id" />
 
             <RelativeLayout
                 android:id="@+id/reserva_relative_2"
