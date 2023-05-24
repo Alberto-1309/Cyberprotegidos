@@ -57,14 +57,17 @@ class ReservaAdapter (private val reservas:List<Reserva>, private val recyclerVi
         holder.numPersonasTextView.text = "Personas: " + currentReserva.numPersonas
         holder.comentarioTextView.text = "Sala: " + currentReserva.comentario
 
+        holder.extraFields.visibility = View.GONE
+        holder.verMasButton.text = "Ver más"
+
         holder.verMasButton.setOnClickListener {
             val gone = holder.extraFields.visibility == View.GONE
-            if(gone){
+            if (gone) {
                 holder.extraFields.visibility = View.VISIBLE
                 holder.verMasButton.text = "Ver menos"
-            }else{
+            } else {
                 holder.extraFields.visibility = View.GONE
-                holder.verMasButton.text = "Ver Más"
+                holder.verMasButton.text = "Ver más"
             }
         }
 
