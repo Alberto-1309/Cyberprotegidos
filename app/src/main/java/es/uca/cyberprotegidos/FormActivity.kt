@@ -44,6 +44,7 @@ class FormActivity : AppCompatActivity() {
         editTextNombre = findViewById(R.id.nombre_edittext)
         editTextDni = findViewById(R.id.dni_edittext)
         editTextTelefono = findViewById(R.id.telefono_edittext)
+        editTextEmail = findViewById(R.id.email_edittext)
         editTextFechaIni = findViewById(R.id.fecha_inicio_edittext)
         editTextFechaFin = findViewById(R.id.fecha_fin_edittext)
         editTextNumPersonas = findViewById(R.id.num_personas_edittext)
@@ -221,8 +222,8 @@ class FormActivity : AppCompatActivity() {
         }
 
         val selectedFechaFin = parseDate(fechaFin)
-        if (selectedFechaFin != null && selectedFechaFin.after(selectedFechaIni)) {
-            editTextFechaFin.error = "La fecha de inicio no puede ser antes que hoy"
+        if (selectedFechaFin != null && selectedFechaFin.before(currentDate)) {
+            editTextFechaFin.error = "La fecha de fin no puede ser antes que la de inicio"
             editTextFechaFin.requestFocus()
             return false
         }
