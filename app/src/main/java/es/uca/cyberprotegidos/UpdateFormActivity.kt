@@ -259,7 +259,7 @@ class UpdateFormActivity : AppCompatActivity() {
         }
 
         val selectedFechaFin = parseDate(fechaFin)
-        if (selectedFechaFin != null && selectedFechaFin.after(selectedFechaIni)) {
+        if (selectedFechaFin != null && selectedFechaFin.before(currentDate)) {
             editTextFechaIni.error = "La fecha de inicio no puede ser antes que hoy"
             editTextFechaIni.requestFocus()
             return false
